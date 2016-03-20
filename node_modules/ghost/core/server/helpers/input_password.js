@@ -15,7 +15,7 @@ input_password = function (options) {
     options.hash = options.hash || {};
 
     var className = (options.hash.class) ? options.hash.class : 'private-login-password',
-        extras = 'autofocus="autofocus"',
+        extras = 'autofocus="autofocus" placeholder="请输入密码"',
         output;
 
     if (options.hash.placeholder) {

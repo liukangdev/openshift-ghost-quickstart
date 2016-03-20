@@ -45,7 +45,7 @@ adminControllers = {
                 location: 'settings-about-upgrade',
                 dismissible: false,
                 status: 'alert',
-                message: 'Ghost ' + updateVersion + ' is available! Hot Damn. <a href="http://support.ghost.org/how-to-upgrade/" target="_blank">Click here</a> to upgrade.'
+                message: 'Ghost ' + updateVersion + ' 版本已正式发布！赶紧 <a href="http://www.ghostchina.com/download/" target="_blank">点击这里</a> 升级吧。'
             };
 
             return api.notifications.browse({context: {internal: true}}).then(function then(results) {

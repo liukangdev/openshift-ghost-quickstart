@@ -21,10 +21,62 @@ config = {
             debug: false
         },
 
+        // 配置MySQL 数据库
+        /*database: {
+            client: 'mysql',
+            connection: {
+                host     : 'host',
+                user     : 'user',
+                password : 'password',
+                database : 'database',
+                charset  : 'utf8'
+            },
+            debug: false
+        },*/
+
         server: {
             host: '127.0.0.1',
             port: '2368'
+        },
+
+        //Storage.Now,we can support `qiniu`,`upyun`, `aliyun oss`, `aliyun ace-storage` and `local-file-store`
+        storage: {
+            provider: 'local-file-store'
         }
+
+        // or
+        // 参考文档： http://www.ghostchina.com/qiniu-cdn-for-ghost/
+        /*storage: {
+            provider: 'qiniu',
+            bucketname: 'your-bucket-name',
+            ACCESS_KEY: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+            SECRET_KEY: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+            root: '/image/',
+            prefix: 'http://your-bucket-name.qiniudn.com'
+        }*/
+
+        // or
+        // 参考文档： http://www.ghostchina.com/upyun-cdn-for-ghost/
+        /*storage: {
+            provider: 'upyun',
+            bucketname: 'your-bucket-name',
+            username: 'your user name',
+            password: 'your password',
+            root: '/image/',
+            prefix: 'http://your-bucket-name.b0.upaiyun.com'
+        }*/
+
+        // or
+        // 参考文档： http://www.ghostchina.com/aliyun-oss-for-ghost/
+        /*storage: {
+            provider: 'oss',
+            bucketname: 'your-bucket-name',
+            ACCESS_KEY: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+            SECRET_KEY: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+            root: '/image/',
+            endpoint: 'http://oss-cn-hangzhou.aliyuncs.com',  //阿里云的上传端点是分地域的，需要单独设置
+            prefix: 'http://your-bucket-name.oss-cn-hangzhou.aliyuncs.com'
+        }*/
     },
 
     // ### Development **(default)**

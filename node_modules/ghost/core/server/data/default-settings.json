@@ -27,7 +27,7 @@
             "defaultValue": ""
         },
         "defaultLang": {
-            "defaultValue": "en_US",
+            "defaultValue": "zh_CN",
             "validations": {
                 "isNull": false
             }
@@ -65,12 +65,12 @@
             "defaultValue": "{}"
         },
         "navigation": {
-            "defaultValue": "[{\"label\":\"Home\", \"url\":\"/\"}]"
+            "defaultValue": "[{\"label\":\"首页\", \"url\":\"/\"}]"
         }
     },
     "theme": {
         "activeTheme": {
-            "defaultValue": "casper"
+            "defaultValue": "casper-zh"
         }
     },
     "app": {
